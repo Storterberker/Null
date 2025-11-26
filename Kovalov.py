@@ -1,6 +1,6 @@
 import random
 
-
+#this is for test
 def bubble_sort(arr):
     a = arr[:]  
     n = len(a)
@@ -25,7 +25,7 @@ def selection_sort(arr):
         a[i], a[min_i] = a[min_i], a[i]
     return a
 
-
+#this is for test
 def insertion_sort(arr):
     a = [x for x in arr]  
     for i in range(1, len(a)):
@@ -41,11 +41,11 @@ def insertion_sort(arr):
 def run_tests():
     print("test")
     test_list = [random.randint(1, 50) for _ in range(10)]
-    print("Original list:    ", test_list)
+    print("jriginal list:    ", test_list)
     print("Bubble sorted:    ", bubble_sort(test_list))
-    print("Selection sorted: ", selection_sort(test_list))
+    print("selection sorted: ", selection_sort(test_list))
     print("Insertion sorted: ", insertion_sort(test_list))
-    print("Built-in sorted:  ", sorted(test_list))
+    print("sorted:  ", sorted(test_list))
 
 
 run_tests()
